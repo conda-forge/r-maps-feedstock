@@ -16,9 +16,7 @@ source:
 
 build:
   number: 0
-  # skipping windows due to MSYS2-related error, see
-  # https://ci.appveyor.com/project/conda-forge/staged-recipes/build/1.0.12799/job/ue64p1bol64yjfik#L3546
-  skip: true  # [win]
+  skip: true  # [win32]
 
   rpaths:
     - lib/R/lib/
@@ -30,14 +28,16 @@ requirements:
     - posix                # [win]
     - {{native}}toolchain  # [win]
     - gcc                  # [not win]
-
   run:
     - r-base
+    - libgcc  # [not win]
 
 test:
   commands:
     - $R -e "library('maps')"  # [not win]
     - "\"%R%\" -e \"library('maps')\""  # [win]
+    - conda inspect linkages -p $PREFIX r-maps  # [not win]
+    - conda inspect objects -p $PREFIX r-maps  # [osx]
 
 about:
   home: https://CRAN.R-project.org/package=maps
@@ -50,3 +50,4 @@ extra:
   recipe-maintainers:
     - johanneskoester
     - bgruening
+    - ocefpaf
