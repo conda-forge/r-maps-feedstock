@@ -1,5 +1,4 @@
-{% set version = "3.3.0" %}
-
+{% set version = '3.3.0' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,32 +9,41 @@ package:
 source:
   fn: maps_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/maps_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/maps/maps_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/maps_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/maps/maps_{{ version }}.tar.gz
   sha256: 199afe19a4edcef966ae79ef802f5dcc15a022f9c357fcb8cae8925fe8bd2216
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 2
   skip: true  # [win32]
-
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
-    - posix                # [win]
-    - {{ compiler('c') }}        # [unix]
-    - {{ compiler('m2w64_c') }}  # [win]
+    - {{ compiler('c') }}        # [not win]
+    - {{native}}toolchain        # [win]
+    - {{posix}}filesystem        # [win]
+    - {{posix}}sed               # [win]
+    - {{posix}}grep              # [win]
+    - {{posix}}autoconf
+    - {{posix}}automake          # [not win]
+    - {{posix}}automake-wrapper  # [win]
+    - {{posix}}pkg-config
+    - {{posix}}make
+    - {{posix}}coreutils         # [win]
+    - {{posix}}zip               # [win]
   host:
     - r-base
   run:
     - r-base
+    - {{native}}gcc-libs         # [win]
 
 test:
   commands:
-    - $R -e "library('maps')"  # [not win]
+    - $R -e "library('maps')"           # [not win]
     - "\"%R%\" -e \"library('maps')\""  # [win]
     - conda inspect linkages -p $PREFIX r-maps  # [not win]
     - conda inspect objects -p $PREFIX r-maps  # [osx]
@@ -46,9 +54,15 @@ about:
   summary: Display of maps.  Projection code and larger maps are in separate packages ('mapproj'
     and 'mapdata').
   license_family: GPL2
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'  # [unix]
+  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-2'  # [win]
 
 extra:
   recipe-maintainers:
+    - ocefpaf
     - johanneskoester
     - bgruening
-    - ocefpaf
+    - daler
+    - jdblischak
+    - cbrueffer
+    - dbast
