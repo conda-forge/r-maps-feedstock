@@ -3,4 +3,4 @@
 set TARGET_ARCH=
 
 "%R%" CMD INSTALL --build .
-if errorlevel 1 exit 1
+IF %ERRORLEVEL% NEQ 0 exit 1
