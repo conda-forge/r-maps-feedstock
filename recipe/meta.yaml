@@ -15,7 +15,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 2
+  number: 1002
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
@@ -54,8 +54,7 @@ about:
   summary: Display of maps.  Projection code and larger maps are in separate packages ('mapproj'
     and 'mapdata').
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-2'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
