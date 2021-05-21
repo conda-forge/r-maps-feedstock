@@ -45,8 +45,6 @@ test:
   commands:
     - $R -e "library('maps')"           # [not win]
     - "\"%R%\" -e \"library('maps')\""  # [win]
-    - conda inspect linkages -p $PREFIX r-maps  # [not win]
-    - conda inspect objects -p $PREFIX r-maps  # [osx]
 
 about:
   home: https://CRAN.R-project.org/package=maps
