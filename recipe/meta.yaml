@@ -1,4 +1,4 @@
-{% set version = '3.3.0' %}
+{% set version = "3.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/maps_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/maps/maps_{{ version }}.tar.gz
-  sha256: 199afe19a4edcef966ae79ef802f5dcc15a022f9c357fcb8cae8925fe8bd2216
+  sha256: 7918ccb2393ca19589d4c4e77d9ebe863dc6317ebfc1ff41869dbfaf439f5747
 
 build:
-  merge_build_host: True  # [win]
-  number: 1004
+  merge_build_host: true  # [win]
+  number: 0
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
@@ -49,10 +49,9 @@ test:
 about:
   home: https://CRAN.R-project.org/package=maps
   license: GPL-2
-  summary: Display of maps.  Projection code and larger maps are in separate packages ('mapproj'
-    and 'mapdata').
+  summary: Display of maps.  Projection code and larger maps are in separate packages ('mapproj' and 'mapdata').
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
