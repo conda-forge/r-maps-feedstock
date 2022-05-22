@@ -14,6 +14,15 @@ jobs:
       osx_64_r_base4.2:
         CONFIG: osx_64_r_base4.2
         UPLOAD_PACKAGES: 'True'
+<<<<<<< HEAD
+=======
+      osx_arm64_r_base4.1:
+        CONFIG: osx_arm64_r_base4.1
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_r_base4.2:
+        CONFIG: osx_arm64_r_base4.2
+        UPLOAD_PACKAGES: 'True'
+>>>>>>> 3a928d8 (migration: OSXArm)
   timeoutInMinutes: 360
 
   steps:
