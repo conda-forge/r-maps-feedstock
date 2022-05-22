@@ -3,7 +3,7 @@ About r-maps
 
 Home: https://CRAN.R-project.org/package=maps
 
-Package license: GPL-2
+Package license: GPL-2.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-maps-feedstock/blob/main/LICENSE.txt)
 
