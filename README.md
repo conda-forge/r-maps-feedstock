@@ -37,93 +37,55 @@ Current build status
               <td>linux_64_r_base4.1</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1331&branchName=main">
-<<<<<<< HEAD
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-maps-feedstock?branchName=main&jobName=linux&configuration=linux_64_r_base4.1" alt="variant">
-=======
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-maps-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.1" alt="variant">
->>>>>>> 9c935c8419c560ccf15a2f243b2f34f8fbe962b7
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_r_base4.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1331&branchName=main">
-<<<<<<< HEAD
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-maps-feedstock?branchName=main&jobName=linux&configuration=linux_64_r_base4.2" alt="variant">
-=======
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-maps-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.2" alt="variant">
->>>>>>> 9c935c8419c560ccf15a2f243b2f34f8fbe962b7
                 </a>
               </td>
             </tr><tr>
               <td>linux_aarch64_r_base4.1</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1331&branchName=main">
-<<<<<<< HEAD
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-maps-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_r_base4.1" alt="variant">
-=======
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-maps-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_r_base4.1" alt="variant">
->>>>>>> 9c935c8419c560ccf15a2f243b2f34f8fbe962b7
                 </a>
               </td>
             </tr><tr>
               <td>linux_aarch64_r_base4.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1331&branchName=main">
-<<<<<<< HEAD
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-maps-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_r_base4.2" alt="variant">
-=======
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-maps-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_r_base4.2" alt="variant">
->>>>>>> 9c935c8419c560ccf15a2f243b2f34f8fbe962b7
                 </a>
               </td>
             </tr><tr>
               <td>linux_ppc64le_r_base4.1</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1331&branchName=main">
-<<<<<<< HEAD
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-maps-feedstock?branchName=main&jobName=linux&configuration=linux_ppc64le_r_base4.1" alt="variant">
-=======
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-maps-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_r_base4.1" alt="variant">
->>>>>>> 9c935c8419c560ccf15a2f243b2f34f8fbe962b7
                 </a>
               </td>
             </tr><tr>
               <td>linux_ppc64le_r_base4.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1331&branchName=main">
-<<<<<<< HEAD
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-maps-feedstock?branchName=main&jobName=linux&configuration=linux_ppc64le_r_base4.2" alt="variant">
-=======
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-maps-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_r_base4.2" alt="variant">
->>>>>>> 9c935c8419c560ccf15a2f243b2f34f8fbe962b7
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_r_base4.1</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1331&branchName=main">
-<<<<<<< HEAD
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-maps-feedstock?branchName=main&jobName=osx&configuration=osx_64_r_base4.1" alt="variant">
-=======
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-maps-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.1" alt="variant">
->>>>>>> 9c935c8419c560ccf15a2f243b2f34f8fbe962b7
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_r_base4.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1331&branchName=main">
-<<<<<<< HEAD
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-maps-feedstock?branchName=main&jobName=osx&configuration=osx_64_r_base4.2" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1331&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-maps-feedstock?branchName=main&jobName=win&configuration=win_64_" alt="variant">
-=======
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-maps-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.2" alt="variant">
                 </a>
               </td>
@@ -146,7 +108,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1331&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-maps-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
->>>>>>> 9c935c8419c560ccf15a2f243b2f34f8fbe962b7
                 </a>
               </td>
             </tr>
