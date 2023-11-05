@@ -3,6 +3,7 @@ About r-maps-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-maps-feedstock/blob/main/LICENSE.txt)
 
+
 About r-maps
 ------------
 
@@ -11,6 +12,7 @@ Home: https://CRAN.R-project.org/package=maps
 Package license: GPL-2.0-only
 
 Summary: Display of maps.  Projection code and larger maps are in separate packages ('mapproj' and 'mapdata').
+
 About r-maps
 ------------
 
