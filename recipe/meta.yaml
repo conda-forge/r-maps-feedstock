@@ -1,4 +1,4 @@
-{% set version = "3.4.1.1" %}
+{% set version = "3.4.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/maps_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/maps/maps_{{ version }}.tar.gz
-  sha256: d39d467537c336d20c4b501d36a421dd3e8309c9d1bdcf9b4a7abe994242851a
+  sha256: 53e57b889f1779cfd4a116a8ed3eded7ed29a73a1b9506248772a389c8404b0c
 
 build:
   merge_build_host: true  # [win]
