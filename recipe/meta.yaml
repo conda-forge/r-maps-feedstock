@@ -1,4 +1,4 @@
-{% set version = "3.4.2" %}
+{% set version = "3.4.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/maps_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/maps/maps_{{ version }}.tar.gz
-  sha256: 53e57b889f1779cfd4a116a8ed3eded7ed29a73a1b9506248772a389c8404b0c
+  sha256: 0be35c7c48f6fcd9ea05e8b280f3bd4d7efa13c3f67cac863ca3493cc9944bef
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
